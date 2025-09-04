@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Threading.Tasks;
 using Game.Application.UseCases;
 using Game.Presentation.Presenters;
 using Game.Presentation.Views;
@@ -18,14 +19,18 @@ namespace Game.Presentation
         public static event Action OnLoadComplete;
 
         [SerializeField] private GameObject loadingScreen;
-        [SerializeField] private Slider loadingSlider;
         [SerializeField] private TextMeshProUGUI loadingText;
         [SerializeField] private Image loadingBackground;
 
         private ILoadingPresenter _loadingPresenter;
+        private ILoadingBarView _loadingBarView;
 
 
-        public void Init(ILoadingPresenter loadingPresenter) => _loadingPresenter = loadingPresenter;
+        public void Init(ILoadingPresenter loadingPresenter, ILoadingBarView loadingBarView)
+        {
+            _loadingPresenter = loadingPresenter;
+            _loadingBarView = loadingBarView;
+        }
 
         private void Awake()
         {
@@ -48,6 +53,20 @@ namespace Game.Presentation
         public void LoadSceneAdditive(string sceneName)
         {
             StartCoroutine(LoadSceneAdditiveAsync(sceneName));
+            //_ = FakeTask();
+        }
+
+        private async Task FakeTask()
+        {
+            _loadingBarView.Value = 0f;
+            await Task.Delay(500);
+            _loadingBarView.Value = .25f;
+            await Task.Delay(500);
+            _loadingBarView.Value = .5f;
+            await Task.Delay(1500);
+            _loadingBarView.Value = .75f;
+            await Task.Delay(2500);
+            _loadingBarView.Value = 1f;
         }
 
         public void LoadSceneByName(string sceneName)
@@ -58,7 +77,7 @@ namespace Game.Presentation
         private IEnumerator LoadSceneAsync(string sceneName)
         {
             loadingScreen.SetActive(true);
-            loadingSlider.value = 0;
+            _loadingBarView.Value = 0;
 
             var operation = SceneManager.LoadSceneAsync(sceneName);
             operation!.allowSceneActivation = false;
@@ -67,7 +86,7 @@ namespace Game.Presentation
             {
                 var progress = Mathf.Clamp01(operation.progress / 0.9f);
                 _loadingPresenter.UpdateProgress(progress);
-                loadingSlider.value = _loadingPresenter.GetProgress();
+                _loadingBarView.Value = _loadingPresenter.GetProgress();
                 //
                 if (operation.progress >= 0.9f)
                 {
@@ -85,7 +104,7 @@ namespace Game.Presentation
         private IEnumerator LoadSceneAdditiveAsync(string sceneName)
         {
             loadingScreen.SetActive(true);
-            loadingSlider.value = 0;
+            _loadingBarView.Value = 0;
 
             var operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
             operation!.allowSceneActivation = false;
@@ -94,7 +113,7 @@ namespace Game.Presentation
             {
                 var progress = Mathf.Clamp01(operation.progress / 0.9f);
                 _loadingPresenter.UpdateProgress(progress);
-                loadingSlider.value = _loadingPresenter.GetProgress();
+                _loadingBarView.Value = _loadingPresenter.GetProgress();
                 //
                 if (operation.progress >= 0.9f)
                 {
@@ -148,9 +167,9 @@ namespace Game.Presentation
 
         public void ApplyTheme(ThemeDto theme)
         {
-            loadingBackground.color = ColorUtility.TryParseHtmlString(theme.BackgroundColor, out var bgColor)
+            /*loadingBackground.color = ColorUtility.TryParseHtmlString(theme.BackgroundColor, out var bgColor)
                 ? bgColor
-                : Color.white;
+                : Color.white;*/
         }
     }
 }
