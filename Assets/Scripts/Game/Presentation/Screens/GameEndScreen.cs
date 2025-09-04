@@ -17,10 +17,10 @@ namespace Game.Presentation.Screens
 
         public void ApplyTheme(ThemeDto currentTheme)
         {
-            backgroundImage.color =
+            /*backgroundImage.color =
                 ColorUtility.TryParseHtmlString(currentTheme.BackgroundColor, out var backgroundColor)
                     ? backgroundColor
-                    : Color.white;
+                    : Color.white;*/
         }
 
         public void OnClickedNextButton() => _ = RestartGame();

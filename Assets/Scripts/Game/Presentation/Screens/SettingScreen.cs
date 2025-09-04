@@ -32,12 +32,12 @@ namespace Game.Infrastructure.Screens
         public void ApplyTheme(ThemeDto theme)
         {
             // Background Color
-            foreach (var image in images)
+            /*foreach (var image in images)
             {
                 image.color = ColorUtility.TryParseHtmlString(theme.BackgroundColor, out var backgroundColor)
                     ? backgroundColor
                     : Color.black;
-            }
+            }*/
         }
 
         private void HandleChangeTheme(ThemeDto theme) => ApplyTheme(theme);

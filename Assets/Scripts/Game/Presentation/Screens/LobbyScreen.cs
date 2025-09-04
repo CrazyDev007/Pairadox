@@ -24,12 +24,12 @@ namespace Game.Infrastructure.Screens
 
         public void ApplyTheme(ThemeDto currentTheme)
         {
-            foreach (var image in images)
+            /*foreach (var image in images)
             {
                 image.color = ColorUtility.TryParseHtmlString(currentTheme.BackgroundColor, out var backgroundColor)
                     ? backgroundColor
                     : Color.white;
-            }
+            }*/
         }
 
         public void OnClickBtnPlay()
