@@ -16,7 +16,7 @@
                 <ui:Button name="button5" text="#" style="font-size: 60px; -unity-font-style: bold;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:Button name="playButton" text="Play" class="play-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/LuckiestGuy-Regular.ttf?fileID=12800000&amp;guid=9702e480a8d5feb49beeece816b9b654&amp;type=3#LuckiestGuy-Regular&quot;);" />
+        <ui:Button name="playButton" text="PLAY" class="play-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&amp;guid=005e728c1d54f474dbd15b4f92d87b65&amp;type=3#UncialAntiqua-Regular&quot;);" />
         <ui:VisualElement class="button-row">
             <ui:Button name="settingsButton" text="Settings" />
             <ui:Button name="shopButton" text="Shop" />
