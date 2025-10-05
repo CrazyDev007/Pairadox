@@ -15,10 +15,18 @@
     -unity-background-scale-mode: scale-and-crop;
 }
 
+.text-group {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .theme-buttons {
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .theme-buttons .unity-button {
