@@ -19,7 +19,8 @@
     padding: 30px 60px;
     border-radius: 5px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
-    border: 2px solid #daa520;
+    border-width: 2px;
+    border-color: #daa520;
 }
 
 .title {
@@ -41,7 +42,8 @@
     background-color: rgba(42, 42, 42, 0.8);
     padding: 60px;
     border-radius: 35px;
-    border: 2px solid #daa520;
+    border-width: 2px;
+    border-color: #daa520;
 }
 
 .section-title {
@@ -65,6 +67,7 @@
     -unity-font-style: bold;
     margin-right: 20px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
-    border: 2px solid #8b4513;
+    border-width: 2px;
+    border-color: #8b4513;
     transition: all 0.3s ease;
 }

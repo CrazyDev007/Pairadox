@@ -21,10 +21,7 @@ Pairadox is a card matching game where players flip cards to find matching pairs
 
 ## Colors
 - **Primary Theme**: Neon dark theme.
-- Background: #0a0a0a (very dark gray/black).
-- Accent: #00fff7 (cyan/teal neon).
-- Secondary: #3f37c9 (purple).
-- Text/Highlights: #ffffff (white), with glow effects.
+- Text/Highlights: with glow effects.
 
 ## Typography
 - **Screen Title Font**: UncialAntiqua-Regular
