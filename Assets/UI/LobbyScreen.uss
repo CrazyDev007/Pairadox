@@ -24,6 +24,23 @@
 .radio-group .unity-radio-button {
     margin-right: 10px;
     color: rgb(0, 255, 255);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.radio-group .unity-radio-button__label {
+    display: none;
+}
+
+.radio-group .unity-radio-button__checkmark {
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
 
 .play-button {
