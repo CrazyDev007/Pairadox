@@ -41,8 +41,7 @@ namespace Game.Infrastructure.Screens
 
         public void OnClickBtnSettings()
         {
-            //UiManager.ShowScreen(UIScreenType.Setting);
-            //Hide();
+            UIManager.Instance.ShowScreen(UIScreenType.Setting);
         }
 
         public void OnClickBtnQuitGame()

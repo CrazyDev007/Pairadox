@@ -1,0 +1,56 @@
+.settings-screen {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #3f37c9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+}
+
+.title {
+    font-size: 48px;
+    color: #00fff7;
+    -unity-font-style: bold;
+    margin-bottom: 40px;
+    -unity-font-definition: url("project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&guid=005e728c1d54f474dbd15b4f92d87b65&type=3#UncialAntiqua-Regular");
+}
+
+.theme-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+}
+
+.theme-buttons {
+    flex-direction: row;
+}
+
+.theme-button {
+    background-color: #00fff7;
+    color: #0a0a0a;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    -unity-font-style: bold;
+    margin-right: 20px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+}

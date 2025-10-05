@@ -26,6 +26,10 @@ Pairadox is a card matching game where players flip cards to find matching pairs
 - Secondary: #3f37c9 (purple).
 - Text/Highlights: #ffffff (white), with glow effects.
 
+## Typography
+- **Screen Title Font**: UncialAntiqua-Regular
+- **Other Screen Text Font**: BebasNeue-Regular
+
 ## Folder/Project Structure
 - **Root**: Unity project with .sln, multiple .csproj for modularity.
 - **Assets/**: Main Unity assets.
@@ -42,5 +46,4 @@ Pairadox is a card matching game where players flip cards to find matching pairs
   - **Test/**: Unit tests.
 - **Packages/**: Unity Package Manager dependencies.
 - **ProjectSettings/**: Unity configuration.
-- **Library/**: Generated files (build artifacts, caches).</content>
-<filePath">c:\CrazyDev007\DevProjects\UnityProjects\Pairadox\README.md
+- **Library/**: Generated files (build artifacts, caches).

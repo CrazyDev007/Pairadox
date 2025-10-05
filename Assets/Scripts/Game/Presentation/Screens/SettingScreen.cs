@@ -4,13 +4,14 @@ using Game.Presentation.Presenters;
 using Game.Presentation.Views;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Game.Infrastructure.Screens
 {
     public class SettingScreen : UIScreen, ISettingView
     {
         // Theme
-        [SerializeField] private Image[] images;
+        //[SerializeField] private Image[] images;
 
         //
         private ISettingPresenter _settingPresenter;
@@ -21,8 +22,7 @@ namespace Game.Infrastructure.Screens
 
         public void OnClickBtnBack()
         {
-            //UiManager.ShowScreen(UIScreenType.Lobby);
-            //Hide();
+            UIManager.Instance.ShowScreen(UIScreenType.Lobby);
         }
 
         public void OnClickLightThemeButton() => _settingPresenter.ChangeTheme("light");
@@ -48,7 +48,13 @@ namespace Game.Infrastructure.Screens
 
         protected override void SetupScreen(UnityEngine.UIElements.VisualElement screen)
         {
-            
+            var backButton = screen.Q<UnityEngine.UIElements.Button>("backButton");
+            var darkThemeButton = screen.Q<UnityEngine.UIElements.Button>("darkThemeButton");
+            var lightThemeButton = screen.Q<UnityEngine.UIElements.Button>("lightThemeButton");
+
+            backButton.clicked += OnClickBtnBack;
+            darkThemeButton.clicked += OnClickDarkThemeButton;
+            lightThemeButton.clicked += OnClickLightThemeButton;
         }
     }
 }
