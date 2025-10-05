@@ -1,8 +1,9 @@
 .settings-screen {
+    background-image: url("project://database/Assets/Sprites/Backgrounds/bg_3.png?fileID=2800000&guid=51ada432e00f2fd4bacb8a98db64f311&type=3#bg_3");
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #0a0a0a;
+    justify-content: flex-start;
+    background-color: #2d2d1a;
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -12,32 +13,43 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #3f37c9;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
+    background-color: #8b4513;
+    color: #ffffff;
+    font-size: 60px;
+    padding: 30px 60px;
     border-radius: 5px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    border: 2px solid #daa520;
 }
 
 .title {
-    font-size: 48px;
-    color: #00fff7;
+    font-size: 98px;
+    color: #1a1a2e;
     -unity-font-style: bold;
     margin-bottom: 40px;
     -unity-font-definition: url("project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&guid=005e728c1d54f474dbd15b4f92d87b65&type=3#UncialAntiqua-Regular");
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.spacer {
+    flex-grow: 1;
 }
 
 .theme-section {
     flex-direction: column;
     align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 60px;
+    border-radius: 35px;
+    border: 2px solid #daa520;
 }
 
 .section-title {
-    font-size: 32px;
-    color: white;
+    font-size: 70px;
+    color: #ffffff;
     margin-bottom: 20px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .theme-buttons {
@@ -45,12 +57,14 @@
 }
 
 .theme-button {
-    background-color: #00fff7;
-    color: #0a0a0a;
-    font-size: 24px;
-    padding: 15px 30px;
+    background-color: #daa520;
+    color: #1a1a1a;
+    font-size: 55px;
+    padding: 35px 70px;
     border-radius: 10px;
     -unity-font-style: bold;
     margin-right: 20px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    border: 2px solid #8b4513;
+    transition: all 0.3s ease;
 }

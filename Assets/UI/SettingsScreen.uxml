@@ -3,6 +3,7 @@
     <ui:VisualElement class="settings-screen">
         <ui:Button name="backButton" text="Back" class="back-button" />
         <ui:Label text="SETTINGS" class="title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&amp;guid=005e728c1d54f474dbd15b4f92d87b65&amp;type=3#UncialAntiqua-Regular&quot;);" />
+        <ui:VisualElement class="spacer" />
         <ui:VisualElement class="theme-section">
             <ui:Label text="Theme" class="section-title" />
             <ui:VisualElement class="theme-buttons">
