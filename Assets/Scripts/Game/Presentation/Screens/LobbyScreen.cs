@@ -41,8 +41,8 @@ namespace Game.Infrastructure.Screens
 
         public void OnClickBtnSettings()
         {
-            UiManager.ShowScreen(UIScreenType.Setting);
-            Hide();
+            //UiManager.ShowScreen(UIScreenType.Setting);
+            //Hide();
         }
 
         public void OnClickBtnQuitGame()
@@ -55,5 +55,10 @@ namespace Game.Infrastructure.Screens
         private void OnEnable() => _lobbyPresenter.ChangeThemeUseCase.OnChangeTheme += HandleThemeChange;
 
         private void OnDisable() => _lobbyPresenter.ChangeThemeUseCase.OnChangeTheme -= HandleThemeChange;
+
+        protected override void SetupScreen(UnityEngine.UIElements.VisualElement screen)
+        {
+            
+        }
     }
 }

@@ -1,5 +1,6 @@
 using Game.Presentation;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Game.Infrastructure.Screens
 {
@@ -18,7 +19,7 @@ namespace Game.Infrastructure.Screens
         private void EventOnGameEnded()
         {
             Debug.Log("Game Ended");
-            UiManager.ShowScreen(UIScreenType.GameEnd);
+            //UiManager.ShowScreen(UIScreenType.GameEnd);
         }
 
         private void OnEnable()
@@ -29,6 +30,11 @@ namespace Game.Infrastructure.Screens
         private void OnDisable()
         {
             ((GameplayListener)_gameplayListener).OnGameEndEvent -= EventOnGameEnded;
+        }
+
+        protected override void SetupScreen(VisualElement screen)
+        {
+            
         }
     }
 }

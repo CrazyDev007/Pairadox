@@ -38,5 +38,10 @@ namespace Game.Presentation.Screens
             await Task.Delay(2000);
             LoadingManager.Instance.LoadSceneAdditive("Gameplay");
         }
+
+        protected override void SetupScreen(UnityEngine.UIElements.VisualElement screen)
+        {
+            
+        }
     }
 }
