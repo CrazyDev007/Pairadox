@@ -10,7 +10,6 @@ namespace Game.Presentation.Views
         private CardPresenter _cardPresenter;
         [SerializeField] private TextMeshPro cardText;
         [SerializeField] private Transform graphicsTransform;
-        [SerializeField] private float timeToFlipCard = 1f;
 
         public void Initialize(CardPresenter cardPresenter)
         {
