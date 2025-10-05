@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns="UnityEngine.UIElements">
+  <Style src="GameplayScreen.uss" />
+  <ui:VisualElement class="gameplay-container">
+    <ui:VisualElement class="stats-panel">
+      <ui:Label text="Matches: 0" class="stat-label match-count" />
+      <ui:Label text="Turns: 0" class="stat-label turn-count" />
+    </ui:VisualElement>
+    <ui:Button text="Back to Lobby" class="back-button" />
+  </ui:VisualElement>
+</ui:UXML>
