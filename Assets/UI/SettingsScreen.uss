@@ -71,3 +71,206 @@
     border-color: #8b4513;
     transition: all 0.3s ease;
 }
+
+/* Audio Section Styles */
+.audio-section {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #daa520;
+    margin-bottom: 30px;
+}
+
+.audio-controls {
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.control-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(26, 26, 46, 0.3);
+    border-radius: 10px;
+}
+
+.control-label {
+    font-size: 35px;
+    color: #ffffff;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    flex: 1;
+}
+
+.volume-slider {
+    flex: 2;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.mute-button {
+    background-color: #8b4513;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    border-width: 2px;
+    border-color: #daa520;
+}
+
+/* Difficulty Section Styles */
+.difficulty-section {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #daa520;
+    margin-bottom: 30px;
+}
+
+/* Effects Section Styles */
+.effects-section {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #daa520;
+    margin-bottom: 30px;
+}
+
+.effects-toggles {
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.toggle-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(26, 26, 46, 0.3);
+    border-radius: 10px;
+}
+
+.toggle-label {
+    font-size: 35px;
+    color: #ffffff;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.effect-toggle {
+    width: 60px;
+    height: 30px;
+}
+
+/* Gameplay Section Styles */
+.gameplay-section {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #daa520;
+    margin-bottom: 30px;
+}
+
+.gameplay-options {
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.option-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(26, 26, 46, 0.3);
+    border-radius: 10px;
+}
+
+.option-label {
+    font-size: 35px;
+    color: #ffffff;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.option-toggle {
+    width: 60px;
+    height: 30px;
+}
+
+.reset-button {
+    background-color: #8b0000;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    border-width: 2px;
+    border-color: #daa520;
+}
+
+/* About Section Styles */
+.about-section {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #daa520;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    flex-direction: column;
+    align-items: center;
+    -unity-text-align: middle-center;
+}
+
+.version-label {
+    font-size: 45px;
+    color: #daa520;
+    -unity-font-definition: url("project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&guid=005e728c1d54f474dbd15b4f92d87b65&type=3#UncialAntiqua-Regular");
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.description-label {
+    font-size: 30px;
+    color: #ffffff;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    max-width: 400px;
+    -unity-text-align: middle-center;
+}
+
+.credits-button {
+    background-color: #daa520;
+    color: #1a1a1a;
+    font-size: 35px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    border-width: 2px;
+    border-color: #8b4513;
+}
