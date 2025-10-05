@@ -2,13 +2,13 @@
     <Style src="project://database/Assets/UI/LobbyScreen.uss?fileID=7433441132597879392&amp;guid=a405b54860b30e1448674cfd450339cc&amp;type=3#LobbyScreen" />
     <ui:VisualElement class="lobby-screen" style="background-image: url(&quot;project://database/Assets/Sprites/Backgrounds/bg_2.png?fileID=2800000&amp;guid=148a9eea2fdd68445aed28fe0155d778&amp;type=3#bg_2&quot;);">
         <ui:Image name="logo" src="Assets/Sprites/UI/Title" class="logo" />
-        <ui:RadioButtonGroup name="radioGroup" class="radio-group">
-            <ui:RadioButton text="Option 1" />
-            <ui:RadioButton text="Option 2" />
-            <ui:RadioButton text="Option 3" />
-            <ui:RadioButton text="Option 4" />
-            <ui:RadioButton text="Option 5" />
-        </ui:RadioButtonGroup>
+        <ui:VisualElement name="radioGroup" class="radio-group">
+            <ui:RadioButton name="radioGroup" />
+            <ui:RadioButton name="radioGroup" />
+            <ui:RadioButton name="radioGroup" />
+            <ui:RadioButton name="radioGroup" />
+            <ui:RadioButton name="radioGroup" />
+        </ui:VisualElement>
         <ui:Button name="playButton" text="Play" class="play-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/LuckiestGuy-Regular.ttf?fileID=12800000&amp;guid=9702e480a8d5feb49beeece816b9b654&amp;type=3#LuckiestGuy-Regular&quot;);" />
         <ui:VisualElement class="button-row">
             <ui:Button name="settingsButton" text="Settings" />
