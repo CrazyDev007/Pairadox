@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns="UnityEngine.UIElements">
+  <Style src="LoginForm.uss" />
+  <ui:VisualElement class="login-container">
+    <ui:VisualElement class="login-card">
+      <ui:Label text="Login" class="login-title" />
+      <ui:TextField name="usernameField" label="Username" class="login-field" placeholder="Enter your username" />
+      <ui:TextField name="passwordField" label="Password" isPasswordField="true" class="login-field" placeholder="Enter your password" />
+      <ui:Button name="loginButton" text="Login" class="login-button" />
+      <ui:Label name="errorLabel" text="" class="error-label" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>
