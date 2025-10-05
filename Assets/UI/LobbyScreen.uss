@@ -1,0 +1,56 @@
+.lobby-screen {
+    background-image: url("project://database/Assets/Sprites/Backgrounds/bg_2.png?fileID=2800000&guid=148a9eea2fdd68445aed28fe0155d778&type=3#bg_2");
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 20px;
+}
+
+.logo {
+    width: 880px;
+    height: 460px;
+    margin-bottom: 20px;
+    background-image: url("project://database/Assets/Sprites/UI/Title.png?fileID=2800000&guid=a0fe0913f421b744baec5868da3f7c53&type=3#Title");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-group .unity-radio-button {
+    margin-right: 10px;
+    color: rgb(0, 255, 255);
+}
+
+.play-button {
+    width: 500px;
+    height: 200px;
+    font-size: 100px;
+    background-color: rgb(0, 50, 0);
+    color: rgb(0, 255, 0);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+}
+
+.button-row .unity-button {
+    width: 240px;
+    font-size: 60px;
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 17px 75px;
+    border-radius: 5px;
+    margin-right: 20px;
+}

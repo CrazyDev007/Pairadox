@@ -14,18 +14,18 @@ namespace Game.Bootstrap
             var changeThemeUseCase = new ChangeThemeUseCase(themeRepository);
             var settingPresenter = new SettingPresenter(changeThemeUseCase, themeRepository);
             // Setting Screen
-            var settingScreen = FindAnyObjectByType<SettingScreen>();
-            settingScreen.Init(settingPresenter);
-            settingPresenter.Init(settingScreen);
+            // var settingScreen = FindAnyObjectByType<SettingScreen>();
+            // settingScreen.Init(settingPresenter);
+            // settingPresenter.Init(settingScreen);
             // Lobby Screen
             var lobbyPresenter = new LobbyPresenter(themeRepository, changeThemeUseCase);
             var lobbyScreen = FindAnyObjectByType<LobbyScreen>();
             lobbyScreen.Init(lobbyPresenter);
             lobbyPresenter.Init(lobbyScreen);
             //
-            var saveService = new SaveManager();
-            var gameModeView = FindAnyObjectByType<GameModeView>();
-            gameModeView.Init(saveService);
+            // var saveService = new SaveManager();
+            // var gameModeView = FindAnyObjectByType<GameModeView>();
+            // gameModeView.Init(saveService);
         }
     }
 }
