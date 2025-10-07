@@ -1634,7 +1634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Game.Presentation::Game.Infrastructure.Screens.SettingScreen
   screenAsset: {fileID: 0}
-  images: []
 --- !u!4 &1216505688
 Transform:
   m_ObjectHideFlags: 0
@@ -1680,8 +1679,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenAsset: {fileID: 0}
-  images:
-  - {fileID: 0}
 --- !u!224 &1367209617
 RectTransform:
   m_ObjectHideFlags: 0
