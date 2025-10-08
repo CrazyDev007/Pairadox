@@ -14,9 +14,9 @@ namespace Game.Bootstrap
             var changeThemeUseCase = new ChangeThemeUseCase(themeRepository);
             var settingPresenter = new SettingPresenter(changeThemeUseCase, themeRepository);
             // Setting Screen
-            // var settingScreen = FindAnyObjectByType<SettingScreen>();
-            // settingScreen.Init(settingPresenter);
-            // settingPresenter.Init(settingScreen);
+            var settingScreen = FindAnyObjectByType<SettingScreen>();
+            settingScreen.Init(settingPresenter);
+            settingPresenter.Init(settingScreen);
             // Lobby Screen
             var lobbyPresenter = new LobbyPresenter(themeRepository, changeThemeUseCase);
             var lobbyScreen = FindAnyObjectByType<LobbyScreen>();

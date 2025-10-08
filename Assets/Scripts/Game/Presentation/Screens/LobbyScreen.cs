@@ -3,7 +3,7 @@ using Game.Presentation;
 using Game.Presentation.Presenters;
 using Game.Presentation.Views;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Game.Infrastructure.Screens
 {
@@ -57,7 +57,9 @@ namespace Game.Infrastructure.Screens
 
         protected override void SetupScreen(UnityEngine.UIElements.VisualElement screen)
         {
-            
+            // get instance of settings button
+            var settingsButton = screen.Q<Button>("settingsButton");
+            settingsButton.RegisterCallback<ClickEvent>(e => OnClickBtnSettings());
         }
     }
 }

@@ -1633,7 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da91dc93ff8725447a702778d952cf96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.Presentation::Game.Infrastructure.Screens.SettingScreen
-  screenAsset: {fileID: 0}
+  screenAsset: {fileID: 9197481963319205126, guid: 588251ae5e9e73a4b9c6117156a3283a, type: 3}
 --- !u!4 &1216505688
 Transform:
   m_ObjectHideFlags: 0
