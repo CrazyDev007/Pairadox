@@ -9,6 +9,7 @@ namespace Game.Presentation
         [SerializeField] protected VisualTreeAsset screenAsset;
         public virtual void Show()
         {
+            _root.styleSheets.Clear();
             _root.Clear();
             VisualElement screen = screenAsset.CloneTree();
             screen.style.flexGrow = 1;
