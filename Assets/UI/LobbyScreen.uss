@@ -20,6 +20,7 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
 }
 
 .theme-buttons {
@@ -27,6 +28,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=79ce45fe32704174f89ac2fa1da59755&type=3#NotInter-Regular");
 }
 
 .theme-buttons .unity-button {
@@ -50,14 +52,13 @@
     padding: 5px 10px;
     margin-bottom: 20px;
     border-radius: 10px;
-    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
+    -unity-font-definition: url("project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&guid=005e728c1d54f474dbd15b4f92d87b65&type=3#UncialAntiqua-Regular");
 }
 
 .button-row {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
 }
 
 .button-row .unity-button {
@@ -68,4 +69,5 @@
     padding: 17px 75px;
     border-radius: 5px;
     margin-right: 20px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
 }

@@ -4,9 +4,9 @@
         <ui:Image name="logo" src="Assets/Sprites/UI/Title" class="logo" />
         <ui:VisualElement class="difficulty-section">
             <ui:VisualElement class="text-group">
-                <ui:Label text="Easy" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=3f5719f62fcd97d4bb4d04585df4fbbd&amp;type=3#BebasNeue-Regular&quot;);" />
-                <ui:Label text="Medium" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=3f5719f62fcd97d4bb4d04585df4fbbd&amp;type=3#BebasNeue-Regular&quot;);" />
-                <ui:Label text="Hard" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&amp;guid=3f5719f62fcd97d4bb4d04585df4fbbd&amp;type=3#BebasNeue-Regular&quot;);" />
+                <ui:Label text="Easy" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold;" />
+                <ui:Label text="Medium" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold;" />
+                <ui:Label text="Hard" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold;" />
             </ui:VisualElement>
             <ui:VisualElement name="themeButtons" class="theme-buttons">
                 <ui:Button name="button1" text="#" style="font-size: 60px; -unity-font-style: bold;" />
@@ -16,7 +16,7 @@
                 <ui:Button name="button5" text="#" style="font-size: 60px; -unity-font-style: bold;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:Button name="playButton" text="PLAY" class="play-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&amp;guid=005e728c1d54f474dbd15b4f92d87b65&amp;type=3#UncialAntiqua-Regular&quot;);" />
+        <ui:Button name="playButton" text="PLAY" class="play-button" />
         <ui:VisualElement class="button-row">
             <ui:Button name="settingsButton" text="Settings" />
             <ui:Button name="shopButton" text="Shop" />
