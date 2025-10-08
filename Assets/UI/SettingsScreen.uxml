@@ -2,6 +2,7 @@
     <Style src="project://database/Assets/UI/SettingsScreen.uss?fileID=7433441132597879392&amp;guid=97306d6d9ee7ad4428774e28ce6c6b7c&amp;type=3#SettingsScreen" />
     <ui:VisualElement class="settings-screen">
         <ui:Label text="SETTINGS" class="title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&amp;guid=005e728c1d54f474dbd15b4f92d87b65&amp;type=3#UncialAntiqua-Regular&quot;);" />
+        <ui:VisualElement class="settings-card">
         <ui:VisualElement class="audio-section">
             <ui:Label text="Audio" class="section-title" />
             <ui:VisualElement class="audio-controls">
@@ -65,6 +66,7 @@
                 <ui:Label text="A challenging card matching game" class="description-label" />
                 <ui:Button name="creditsButton" text="Credits" class="credits-button" />
             </ui:VisualElement>
+        </ui:VisualElement>
         </ui:VisualElement>
         <ui:Button name="backButton" text="back" class="back-button" style="position: absolute;" />
     </ui:VisualElement>

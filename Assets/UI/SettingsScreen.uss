@@ -15,8 +15,8 @@
     left: 20px;
     background-color: #8b4513;
     color: #ffffff;
-    font-size: 60px;
-    padding: 30px 60px;
+    font-size: 40px;
+    padding: 20px 40px;
     border-radius: 5px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
     border-width: 2px;
@@ -27,7 +27,7 @@
     font-size: 98px;
     color: #1a1a2e;
     -unity-font-style: bold;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     -unity-font-definition: url("project://database/Assets/Fonts/UncialAntiqua-Regular.ttf?fileID=12800000&guid=005e728c1d54f474dbd15b4f92d87b65&type=3#UncialAntiqua-Regular");
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -40,16 +40,17 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(42, 42, 42, 0.8);
-    padding: 60px;
+    padding: 20px 40px 40px 40px;
     border-radius: 35px;
     border-width: 2px;
     border-color: #daa520;
+    margin-bottom: 15px;
 }
 
 .section-title {
     font-size: 70px;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
@@ -77,11 +78,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(42, 42, 42, 0.8);
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     border-radius: 25px;
     border-width: 2px;
     border-color: #daa520;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .audio-controls {
@@ -142,11 +143,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(42, 42, 42, 0.8);
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     border-radius: 25px;
     border-width: 2px;
     border-color: #daa520;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .effects-toggles {
@@ -182,11 +183,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(42, 42, 42, 0.8);
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     border-radius: 25px;
     border-width: 2px;
     border-color: #daa520;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .gameplay-options {
@@ -233,11 +234,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(42, 42, 42, 0.8);
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     border-radius: 25px;
     border-width: 2px;
     border-color: #daa520;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .about-content {
