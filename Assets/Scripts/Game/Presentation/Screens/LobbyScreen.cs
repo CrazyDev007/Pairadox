@@ -60,6 +60,10 @@ namespace Game.Infrastructure.Screens
             // get instance of settings button
             var settingsButton = screen.Q<Button>("settingsButton");
             settingsButton.RegisterCallback<ClickEvent>(e => OnClickBtnSettings());
+
+            // get instance of play button
+            var playButton = screen.Q<Button>("playButton");
+            playButton.RegisterCallback<ClickEvent>(e => OnClickBtnPlay());
         }
     }
 }
