@@ -9,13 +9,16 @@ namespace Game.Infrastructure.Screens
 {
     public class LobbyScreen : UIScreen, ILobbyView
     {
-        // UI
-        [SerializeField] private Image[] images;
-
-        //
+        // get reference of GameModeView
+        private GameModeView _gameModeView;
         private ILobbyPresenter _lobbyPresenter;
 
-        public void Init(ILobbyPresenter lobbyPresenter) => _lobbyPresenter = lobbyPresenter;
+        // add GameModeView init method
+        public void Init(ILobbyPresenter lobbyPresenter, GameModeView gameModeView)
+        {
+            _lobbyPresenter = lobbyPresenter;
+            _gameModeView = gameModeView;
+        }
 
         private void Awake()
         {
@@ -64,6 +67,9 @@ namespace Game.Infrastructure.Screens
             // get instance of play button
             var playButton = screen.Q<Button>("playButton");
             playButton.RegisterCallback<ClickEvent>(e => OnClickBtnPlay());
+
+            // setup game mode view
+            _gameModeView.Setup(screen);
         }
     }
 }

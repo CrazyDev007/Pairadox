@@ -5,7 +5,8 @@ namespace Game.Presentation.Views
 {
     public interface ILobbyView
     {
-        void Init(ILobbyPresenter lobbyPresenter);
+        // add GameModeView init method
+        void Init(ILobbyPresenter lobbyPresenter, GameModeView gameModeView);
         void ApplyTheme(ThemeDto currentTheme);
     }
 }

@@ -17,15 +17,16 @@ namespace Game.Bootstrap
             var settingScreen = FindAnyObjectByType<SettingScreen>();
             settingScreen.Init(settingPresenter);
             settingPresenter.Init(settingScreen);
+            // create game mode view and save service instance
+            var gameModeView = new GameModeView();
+            var saveService = new SaveManager();
+            gameModeView.Init(saveService);
+
             // Lobby Screen
             var lobbyPresenter = new LobbyPresenter(themeRepository, changeThemeUseCase);
             var lobbyScreen = FindAnyObjectByType<LobbyScreen>();
-            lobbyScreen.Init(lobbyPresenter);
+            lobbyScreen.Init(lobbyPresenter, gameModeView);
             lobbyPresenter.Init(lobbyScreen);
-            //
-            // var saveService = new SaveManager();
-            // var gameModeView = FindAnyObjectByType<GameModeView>();
-            // gameModeView.Init(saveService);
         }
     }
 }

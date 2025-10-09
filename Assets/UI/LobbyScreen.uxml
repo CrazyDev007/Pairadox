@@ -9,11 +9,11 @@
                 <ui:Label text="Hard" style="font-size: 40px; color: rgb(0, 255, 255); -unity-font-style: bold;" />
             </ui:VisualElement>
             <ui:VisualElement name="themeButtons" class="theme-buttons">
-                <ui:Button name="button1" text="#" style="font-size: 60px; -unity-font-style: bold;" />
-                <ui:Button name="button2" text="#" style="font-size: 60px; -unity-font-style: bold;" />
-                <ui:Button name="button3" text="#" style="font-size: 60px; -unity-font-style: bold;" />
-                <ui:Button name="button4" text="#" style="font-size: 60px; -unity-font-style: bold;" />
-                <ui:Button name="button5" text="#" style="font-size: 60px; -unity-font-style: bold;" />
+                <ui:Button name="easy" text="#" style="font-size: 60px; -unity-font-style: bold;" />
+                <ui:Button name="easyMedium" text="#" style="font-size: 60px; -unity-font-style: bold;" />
+                <ui:Button name="medium" text="#" style="font-size: 60px; -unity-font-style: bold;" />
+                <ui:Button name="mediumHard" text="#" style="font-size: 60px; -unity-font-style: bold;" />
+                <ui:Button name="hard" text="#" style="font-size: 60px; -unity-font-style: bold;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:Button name="playButton" text="PLAY" class="play-button" />
