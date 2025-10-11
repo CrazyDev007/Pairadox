@@ -93,5 +93,11 @@ namespace Game.Presentation
             UpdateButtonText(mode);
             Debug.Log($"Selected Mode: {mode} (Rows: {modeData.rows}, Columns: {modeData.cols})");
         }
+
+        public GameModeConfig GetCurrentGameMode()
+        {
+            var currentConfig = _saveService.LoadGameMode();
+            return currentConfig;
+        }
     }
 }

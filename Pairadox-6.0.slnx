@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Project Path="Game.Presentation.csproj" />
+  <Project Path="Game.Application.csproj" />
+  <Project Path="Game.Domain.csproj" />
+  <Project Path="Game.Infrastructure.csproj" />
+  <Project Path="Game.Bootstrap.csproj" />
+  <Project Path="CrazyDev007.Test.csproj" />
+</Solution>
