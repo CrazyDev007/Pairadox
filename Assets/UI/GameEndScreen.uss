@@ -1,0 +1,178 @@
+/* Neon-infused end screen styling */
+.game-end-screen {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #050509;
+  color: #f4f6ff;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 247, 0.07);
+}
+
+.content-card {
+  flex-direction: column;
+  align-items: center;
+  /* gap not supported in USS, adjust child margins manually */
+  padding: 40px 48px;
+  width: 520px;
+  border-radius: 24px;
+  background-color: rgba(12, 14, 27, 0.9);
+  border-width: 2px;
+  border-color: rgba(0, 255, 247, 0.4);
+  /* box-shadow not supported in USS; remove or implement alternative shadow */
+  position: relative;
+}
+
+.title {
+  font-size: 42px;
+  -unity-font-style: bold;
+  letter-spacing: 4px;
+  /* text-transform not supported in USS; ensure title text is uppercase in UXML */
+  text-shadow: 0 0 20px rgba(0, 255, 247, 0.75);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #9aa2cf;
+  letter-spacing: 1.5px;
+}
+
+.score-summary {
+  flex-direction: column;
+  align-items: center;
+  /* gap not supported in USS; adjust child margins manually */
+  padding: 16px 24px;
+  border-radius: 16px;
+  border-width: 1px;
+  border-color: rgba(0, 255, 247, 0.25);
+  background-color: rgba(63, 55, 201, 0.18);
+  width: 100%;
+}
+
+.summary-label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #9aa2cf;
+}
+
+.summary-value {
+  font-size: 48px;
+  -unity-font-style: bold;
+  letter-spacing: 3px;
+  color: #00fff7;
+}
+
+.score-value {
+  text-shadow: 0 0 18px rgba(0, 255, 247, 0.6);
+}
+
+.stats-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  /* gap not supported in USS; adjust child margins manually */
+}
+
+.stat-tile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* use 50% width; adjust margins for spacing */
+  padding: 16px;
+  border-radius: 16px;
+  background-color: rgba(10, 12, 22, 0.8);
+  border-width: 1px;
+  border-color: rgba(154, 162, 207, 0.2);
+  /* box-shadow not supported in USS; use simple border or text-shadow fallback if needed */
+}
+
+.tile-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #9097bd;
+}
+
+.tile-value {
+  font-size: 28px;
+  -unity-font-style: bold;
+  color: #fefbfb;
+  margin-top: 6px;
+}
+
+.progress-section {
+  flex-direction: column;
+  /* gap not supported in USS; adjust child margins manually */
+  width: 100%;
+  margin-top: 4px;
+}
+
+.level-progress {
+  height: 16px;
+  border-radius: 10px;
+  background-color: rgba(20, 22, 41, 0.9);
+  border-width: 1px;
+  border-color: rgba(0, 255, 247, 0.2);
+}
+
+.level-progress > .unity-progress-bar__determinate {
+  background-color: #00fff7; /* fallback solid color, gradient not supported */
+  border-radius: 8px;
+  /* box-shadow not supported in USS; removed */
+}
+
+.button-row {
+  flex-direction: row;
+  justify-content: center;
+  /* gap not supported in USS; adjust child margins manually */
+  width: 100%;
+  margin-top: 16px;
+}
+
+.primary-button,
+.secondary-button {
+  width: 200px;
+  height: 48px;
+  border-radius: 24px;
+  border-width: 2px;
+  font-size: 18px;
+  -unity-font-style: bold;
+  letter-spacing: 1px;
+  transition-property: background-color, color, border-color; /* transform not supported */
+  transition-duration: 0.15s;
+}
+
+.primary-button {
+  background-color: #00fff7;
+  color: #050509;
+  border-color: rgba(63, 55, 201, 0.4);
+  /* box-shadow not supported in USS; removed */
+}
+
+.primary-button:hover {
+  /* transform not supported in USS; removed translate */
+  background-color: #3f37c9;
+  color: #ffffff;
+  border-color: rgba(0, 255, 247, 0.6);
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #00fff7;
+  border-color: rgba(0, 255, 247, 0.35);
+}
+
+.secondary-button:hover {
+  /* transform not supported in USS; removed translate */
+  color: #ffffff;
+  border-color: rgba(0, 255, 247, 0.6);
+}

@@ -16,12 +16,12 @@ namespace Game.Bootstrap
             // GameInitializer
             var gameInitializer = FindAnyObjectByType<GameInitializer>();
             gameInitializer.Init(gameplayListener, saveService);
-            // GameplayStatsView
-            var gameplayStatsView = FindAnyObjectByType<GameplayStatsView>();
+            // GameplayStatsView (normal C# class)
+            var gameplayStatsView = new GameplayStatsView();
             gameplayStatsView.Init(gameplayListener);
             // GameplayScreen
             var gameplayScreen = FindAnyObjectByType<GameplayScreen>();
-            gameplayScreen.Init(gameplayListener);
+            gameplayScreen.Init(gameplayListener, gameplayStatsView);
             // Game End Screen
             var themeRepository = new PlayerPrefsThemeRepository();
             var gameEndPresenter = new GameEndPresenter(themeRepository);

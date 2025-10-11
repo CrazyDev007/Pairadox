@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns="UnityEngine.UIElements">
+  <Style src="GameEndScreen.uss" />
+  <ui:VisualElement class="game-end-screen">
+    <ui:VisualElement class="background-overlay" />
+    <ui:VisualElement class="content-card">
+      <ui:Label text="Game Over" class="title" />
+      <ui:Label text="Thanks for playing Pairadox" class="subtitle" />
+      <ui:VisualElement class="score-summary">
+        <ui:Label text="Final Score" class="summary-label" />
+        <ui:Label text="12850" class="summary-value score-value" />
+      </ui:VisualElement>
+      <ui:VisualElement class="stats-grid">
+        <ui:VisualElement class="stat-tile">
+          <ui:Label text="Matches" class="tile-label" />
+          <ui:Label text="24" class="tile-value" />
+        </ui:VisualElement>
+        <ui:VisualElement class="stat-tile">
+          <ui:Label text="Turns" class="tile-label" />
+          <ui:Label text="32" class="tile-value" />
+        </ui:VisualElement>
+        <ui:VisualElement class="stat-tile">
+          <ui:Label text="Best Streak" class="tile-label" />
+          <ui:Label text="7" class="tile-value" />
+        </ui:VisualElement>
+        <ui:VisualElement class="stat-tile">
+          <ui:Label text="Time" class="tile-label" />
+          <ui:Label text="05:42" class="tile-value" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement class="progress-section">
+        <ui:Label text="Level Progress" class="tile-label" />
+        <ui:ProgressBar value="72" class="level-progress" />
+      </ui:VisualElement>
+      <ui:VisualElement class="button-row">
+        <ui:Button text="Play Again" class="primary-button" />
+        <ui:Button text="Back to Lobby" class="secondary-button" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

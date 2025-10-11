@@ -1,4 +1,5 @@
 using Game.Presentation;
+using Game.Infrastructure.Views;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -6,9 +7,14 @@ namespace Game.Infrastructure.Screens
 {
     public class GameplayScreen : UIScreen
     {
-        private IGameplayListener _gameplayListener;
+    private IGameplayListener _gameplayListener;
+    private GameplayStatsView _statsView;
 
-        public void Init(IGameplayListener gameplayListener) => _gameplayListener = gameplayListener;
+        public void Init(IGameplayListener gameplayListener, GameplayStatsView statsView)
+        {
+            _gameplayListener = gameplayListener;
+            _statsView = statsView;
+        }
 
         public void OnClickExitGameButton()
         {
@@ -34,7 +40,7 @@ namespace Game.Infrastructure.Screens
 
         protected override void SetupScreen(VisualElement screen)
         {
-            
+            _statsView.Setup(screen);
         }
     }
 }

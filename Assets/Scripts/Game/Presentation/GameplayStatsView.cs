@@ -1,43 +1,51 @@
 using Game.Presentation;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Game.Infrastructure.Views
 {
-    public class GameplayStatsView : MonoBehaviour
+    public class GameplayStatsView
     {
-        [SerializeField] private GameplayStatItemView matchesCountItemView;
-        [SerializeField] private GameplayStatItemView turnsCountItemView;
-
         private IGameplayListener _gameplayListener;
+        private Label turnCountLabel;
+        private Label matchesCountLabel;
 
-        public void Init(IGameplayListener gameplayListener) => _gameplayListener = gameplayListener;
-
-        private void Start()
+        public void Init(IGameplayListener gameplayListener)
         {
-            OnTurnsCountChanged(0);
-            OnMatchesCountChanged(0);
+            _gameplayListener = gameplayListener;
         }
 
-        private void OnEnable()
+        // Setup UI bindings with provided screen root
+        public void Setup(VisualElement screen)
         {
-            ((GameplayListener)_gameplayListener).OnMatchesCountChangeEvent += OnMatchesCountChanged;
-            ((GameplayListener)_gameplayListener).OnTurnsCountChangeEvent += OnTurnsCountChanged;
+            turnCountLabel = screen.Q<Label>("turnsCountLabel");
+            matchesCountLabel = screen.Q<Label>("matchesCountLabel");
+            var concrete = (GameplayListener)_gameplayListener;
+            concrete.OnMatchesCountChangeEvent += OnMatchesCountChanged;
+            concrete.OnTurnsCountChangeEvent += OnTurnsCountChanged;
+            // Initial update
+            OnMatchesCountChanged(0);
+            OnTurnsCountChanged(0);
+        }
+
+        // Cleanup bindings
+        public void Dispose()
+        {
+            var concrete = (GameplayListener)_gameplayListener;
+            concrete.OnMatchesCountChangeEvent -= OnMatchesCountChanged;
+            concrete.OnTurnsCountChangeEvent -= OnTurnsCountChanged;
         }
 
         private void OnTurnsCountChanged(int turnsCount)
         {
-            turnsCountItemView.SetCounts(turnsCount);
+            if (turnCountLabel != null) turnCountLabel.text = turnsCount.ToString();
         }
 
         private void OnMatchesCountChanged(int matchesCount)
         {
-            matchesCountItemView.SetCounts(matchesCount);
+            if (matchesCountLabel != null) matchesCountLabel.text = matchesCount.ToString();
         }
 
-        private void OnDisable()
-        {
-            ((GameplayListener)_gameplayListener).OnMatchesCountChangeEvent -= OnMatchesCountChanged;
-            ((GameplayListener)_gameplayListener).OnTurnsCountChangeEvent -= OnTurnsCountChanged;
-        }
+        // ...existing code...
     }
 }
