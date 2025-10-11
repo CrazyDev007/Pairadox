@@ -66,7 +66,10 @@ namespace Game.Presentation
 
         public GameEndSummaryDto GetSummary()
         {
-            var elapsedSeconds = Mathf.Max(0f, _sessionEndTime - _sessionStartTime);
+            // If game not yet ended, use current realtime to show live elapsed time
+            var currentTime = Time.realtimeSinceStartup;
+            var endTime = _sessionEndTime > _sessionStartTime ? _sessionEndTime : currentTime;
+            var elapsedSeconds = Mathf.Max(0f, endTime - _sessionStartTime);
             var progress = _totalMatchesRequired == 0
                 ? 0
                 : Mathf.RoundToInt((float)_matchCount / _totalMatchesRequired * 100f);

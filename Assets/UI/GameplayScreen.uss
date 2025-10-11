@@ -26,6 +26,7 @@
     border-radius: 10px;
     border-width: 1px;
     border-color: rgb(0, 255, 247);
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
 }
 
 .match-count {
@@ -46,6 +47,7 @@
     border-width: 2px;
     border-color: rgb(0, 255, 247);
     margin-bottom: 100px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BebasNeue-Regular.ttf?fileID=12800000&guid=3f5719f62fcd97d4bb4d04585df4fbbd&type=3#BebasNeue-Regular");
 }
 
 .back-button:hover {
