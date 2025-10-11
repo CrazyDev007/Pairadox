@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Game.Application.UseCases;
 using Game.Presentation.Presenters;
@@ -24,10 +25,9 @@ namespace Game.Presentation.Screens
         private Button _playAgainButton;
         private Button _backToLobbyButton;
 
-        private IGameEndPresenter _gameEndPresenter;
+    private IGameEndPresenter _gameEndPresenter;
 
-        public void Init(IGameEndPresenter gameEndPresenter) => _gameEndPresenter = gameEndPresenter;
-        private void Awake() => _gameEndPresenter.ApplyTheme();
+    public void Init(IGameEndPresenter gameEndPresenter) => _gameEndPresenter = gameEndPresenter;
 
         public void ApplyTheme(ThemeDto currentTheme)
         {
@@ -76,6 +76,49 @@ namespace Game.Presentation.Screens
 
             _playAgainButton.clicked += OnClickedNextButton;
             _backToLobbyButton.clicked += OnClickExitGameButton;
+
+            _gameEndPresenter?.PresentSummary();
+        }
+
+        public void RenderSummary(GameEndSummaryDto summary)
+        {
+            if (_scoreValueLabel != null)
+            {
+                _scoreValueLabel.text = summary.FinalScore.ToString();
+            }
+
+            if (_matchesValueLabel != null)
+            {
+                _matchesValueLabel.text = summary.TotalMatches.ToString();
+            }
+
+            if (_turnsValueLabel != null)
+            {
+                _turnsValueLabel.text = summary.TotalTurns.ToString();
+            }
+
+            if (_bestStreakValueLabel != null)
+            {
+                _bestStreakValueLabel.text = summary.BestStreak.ToString();
+            }
+
+            if (_timeValueLabel != null)
+            {
+                _timeValueLabel.text = FormatElapsedTime(summary.ElapsedSeconds);
+            }
+
+            if (_levelProgressBar != null)
+            {
+                _levelProgressBar.value = summary.LevelProgressPercent;
+            }
+        }
+
+        private static string FormatElapsedTime(float elapsedSeconds)
+        {
+            var span = TimeSpan.FromSeconds(Math.Max(0, elapsedSeconds));
+            return span.Hours > 0
+                ? $"{span.Hours:00}:{span.Minutes:00}:{span.Seconds:00}"
+                : $"{span.Minutes:00}:{span.Seconds:00}";
         }
     }
 }

@@ -6,5 +6,6 @@ namespace Game.Presentation.Presenters
     {
         void Init(IGameEndView gameEndView);
         void ApplyTheme();
+        void PresentSummary();
     }
 }

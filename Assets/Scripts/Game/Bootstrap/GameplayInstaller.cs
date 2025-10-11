@@ -25,7 +25,7 @@ namespace Game.Bootstrap
             gameplayScreen.Init(gameplayListener, gameplayStatsView);
             // Game End Screen
             var themeRepository = new PlayerPrefsThemeRepository();
-            var gameEndPresenter = new GameEndPresenter(themeRepository);
+            var gameEndPresenter = new GameEndPresenter(themeRepository, gameplayListener);
             var gameEndScreen = FindAnyObjectByType<GameEndScreen>();
             gameEndScreen.Init(gameEndPresenter);
             gameEndPresenter.Init(gameEndScreen);

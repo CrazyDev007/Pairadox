@@ -7,5 +7,6 @@ namespace Game.Presentation.Views
     {
         void Init(IGameEndPresenter gameEndPresenter);
         void ApplyTheme(ThemeDto currentTheme);
+        void RenderSummary(GameEndSummaryDto summary);
     }
 }

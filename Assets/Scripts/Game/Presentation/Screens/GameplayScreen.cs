@@ -1,3 +1,4 @@
+using Game.Application.UseCases;
 using Game.Presentation;
 using Game.Infrastructure.Views;
 using UnityEngine;
@@ -24,7 +25,7 @@ namespace Game.Infrastructure.Screens
             LoadingManager.Instance.LoadSceneAdditive("Lobby");
         }
 
-        private void EventOnGameEnded()
+        private void EventOnGameEnded(GameEndSummaryDto _)
         {
             Debug.Log("Game Ended");
             UIManager.Instance.ShowScreen(UIScreenType.GameEnd);
