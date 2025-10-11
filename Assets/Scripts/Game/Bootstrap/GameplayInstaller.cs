@@ -18,6 +18,7 @@ namespace Game.Bootstrap
             gameInitializer.Init(gameplayListener, saveService);
             // GameplayStatsView (normal C# class)
             var gameplayStatsView = new GameplayStatsView();
+            // Initialize the stats view with the gameplay listener to subscribe to events
             gameplayStatsView.Init(gameplayListener);
             // GameplayScreen
             var gameplayScreen = FindAnyObjectByType<GameplayScreen>();

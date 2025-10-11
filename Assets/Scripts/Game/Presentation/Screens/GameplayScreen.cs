@@ -14,6 +14,8 @@ namespace Game.Infrastructure.Screens
         {
             _gameplayListener = gameplayListener;
             _statsView = statsView;
+            // Ensure the stats view is initialized with the gameplay listener so it subscribes to events
+            //_statsView.Init(_gameplayListener);
         }
 
         public void OnClickExitGameButton()
@@ -25,7 +27,7 @@ namespace Game.Infrastructure.Screens
         private void EventOnGameEnded()
         {
             Debug.Log("Game Ended");
-            //UiManager.ShowScreen(UIScreenType.GameEnd);
+            UIManager.Instance.ShowScreen(UIScreenType.GameEnd);
         }
 
         private void OnEnable()

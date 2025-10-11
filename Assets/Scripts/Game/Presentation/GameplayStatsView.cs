@@ -18,8 +18,8 @@ namespace Game.Infrastructure.Views
         // Setup UI bindings with provided screen root
         public void Setup(VisualElement screen)
         {
-            turnCountLabel = screen.Q<Label>("turnsCountLabel");
-            matchesCountLabel = screen.Q<Label>("matchesCountLabel");
+            turnCountLabel = screen.Q<Label>("turnCountLabel");
+            matchesCountLabel = screen.Q<Label>("matchCountLabel");
             var concrete = (GameplayListener)_gameplayListener;
             concrete.OnMatchesCountChangeEvent += OnMatchesCountChanged;
             concrete.OnTurnsCountChangeEvent += OnTurnsCountChanged;
@@ -38,12 +38,12 @@ namespace Game.Infrastructure.Views
 
         private void OnTurnsCountChanged(int turnsCount)
         {
-            if (turnCountLabel != null) turnCountLabel.text = turnsCount.ToString();
+            turnCountLabel.text = "Turns: " + turnsCount.ToString();
         }
 
         private void OnMatchesCountChanged(int matchesCount)
         {
-            if (matchesCountLabel != null) matchesCountLabel.text = matchesCount.ToString();
+            matchesCountLabel.text = "Matches: " + matchesCount.ToString();
         }
 
         // ...existing code...
