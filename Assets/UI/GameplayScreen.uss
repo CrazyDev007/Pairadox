@@ -4,7 +4,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .stats-panel {
@@ -12,16 +12,16 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .stat-label {
-    font-size: 24px;
+    font-size: 32px;
     -unity-font-style: bold;
     color: rgb(0, 255, 247);
     text-shadow: 0 0 10px rgb(0, 255, 247);
     letter-spacing: 1px;
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: rgba(0, 255, 247, 0.1);
     border-radius: 10px;
     border-width: 1px;
@@ -35,17 +35,17 @@
 }
 
 .back-button {
-    width: 200px;
-    height: 50px;
+    width: 60%;
+    height: 70px;
     background-color: rgb(63, 55, 201);
     color: rgb(255, 255, 255);
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 24px;
     -unity-font-style: bold;
     letter-spacing: 0.5px;
     border-width: 2px;
     border-color: rgb(0, 255, 247);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .back-button:hover {
