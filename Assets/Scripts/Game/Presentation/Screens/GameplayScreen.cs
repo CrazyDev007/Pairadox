@@ -44,6 +44,12 @@ namespace Game.Infrastructure.Screens
         protected override void SetupScreen(VisualElement screen)
         {
             _statsView.Setup(screen);
+            // Wire up the back to lobby button
+            var backButton = screen.Q<Button>("backButton");
+            if (backButton != null)
+            {
+                backButton.clicked += OnClickExitGameButton;
+            }
         }
     }
 }

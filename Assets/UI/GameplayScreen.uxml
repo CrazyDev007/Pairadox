@@ -6,6 +6,6 @@
             <ui:Label text="Turns: 0" name="turnCountLabel" class="stat-label turn-count" />
             <ui:Label text="Time: 00:00" name="timeLabel" class="stat-label time-count" />
         </ui:VisualElement>
-        <ui:Button text="Back to Lobby" class="back-button" />
+    <ui:Button text="Back to Lobby" name="backButton" class="back-button" />
     </ui:VisualElement>
 </ui:UXML>
