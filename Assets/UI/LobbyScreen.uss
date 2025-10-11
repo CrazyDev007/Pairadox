@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=79ce45fe32704174f89ac2fa1da59755&type=3#NotInter-Regular");
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss#NotInter-Regular");
 }
 
 .theme-buttons .unity-button {

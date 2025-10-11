@@ -91,7 +91,6 @@ namespace Game.Presentation
             var modeData = _modes.First(m => m.mode == mode);
             _saveService.SaveGameMode(new GameModeConfig(mode, modeData.rows, modeData.cols));
             UpdateButtonText(mode);
-            Debug.Log($"Selected Mode: {mode} (Rows: {modeData.rows}, Columns: {modeData.cols})");
         }
 
         public GameModeConfig GetCurrentGameMode()

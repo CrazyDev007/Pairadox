@@ -23,8 +23,7 @@ namespace Game.Infrastructure
 
         public void SaveGameMode(GameModeConfig gameConfigToSave)
         {
-            var saveGameData = JsonUtility.ToJson(gameConfigToSave);
-            Debug.Log(">>>>> " + saveGameData);
+            var saveGameData = JsonUtility.ToJson(gameConfigToSave);            
             PlayerPrefs.SetString(GameModeKey, saveGameData);
             PlayerPrefs.Save();
         }
